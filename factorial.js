@@ -1,13 +1,15 @@
-var num;
+//This version correctly factorializes any number equal to or above zero in node.js. It was not accepted by the Free Code Camp (FCC) Challenge.
+
 var factor=1;
-console.log(num);
+
 function factorialize(num) {
 
-   if (num==0) return num;
+   if (num==0) {
+     console.log(factor);
+     return factor;} else {
   factor=factor*num;
-  console.log(num +" Factor: " + factor);
-  factorialize(num-1);
+  factorialize(num-1);}
 
 }  
 
-factorialize(5);
+factorialize(10);
